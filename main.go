@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/mattJamesBoyle/jsonifyDir/jsonify"
+)
 
 func main() {
-fmt.Println("dockerised")
+	fmt.Println("dockerised")
+	jsonify.Do()
 }
