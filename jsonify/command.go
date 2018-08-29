@@ -24,10 +24,13 @@ func Do(dir string) (*response, error) {
 	}
 
 	for _, f := range files {
-		folders = append(folders, folder{
-			Name: f.Name(),
-			Size: f.Size(),
-		})
+		if f.IsDir() {
+			folders = append(folders, folder{
+				Name: f.Name(),
+				Size: f.Size(),
+			})
+		}
+
 	}
 	return &response{
 		Folders: folders,
