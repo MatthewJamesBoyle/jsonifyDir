@@ -3,8 +3,8 @@ package main
 import (
 	"errors"
 	"fmt"
-	"github.com/mattJamesBoyle/jsonifyDir/jsonify"
 	"os"
+	"github.com/matthewjamesboyle/jsonifyDir/jsonify"
 )
 
 func main() {

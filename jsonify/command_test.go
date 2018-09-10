@@ -2,9 +2,9 @@ package jsonify_test
 
 import (
 	"fmt"
-	"github.com/mattJamesBoyle/jsonifyDir/jsonify"
 	"github.com/stretchr/testify/assert"
 	"testing"
+	"github.com/matthewjamesboyle/jsonifyDir/jsonify"
 )
 
 func TestDo(t *testing.T) {
